@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            setInterval(time_change, 200);
+        };
+    </script>
+</head>
+<body>
+    <div id="all_block">
+        <div id="time_block">
+            <p id="time">00:00:00</p>
+            <p id="day">0000/00/00</p>
+            <script type="text/javascript">time_change()</script>
+        </div>
+        <div id="search_block">
+            <div id="keyword"><input id="search_box" type="text" checked /></div>
+            <div id="engines">
+                <button id="baidu" onclick="baidu_search()"><img src="images/baidu.gif" /></button>
+                <button id="bing" onclick="bing_search()" ><img src="images/bing.gif" /></button>
+                <button id="google" onclick="google_search()"><img src="images/google.gif" /></button>
+                <button id="csdn" onclick="csdn_search()"><img src="images/csdn.gif" /></button>
+            </div>
+        </div>
+        <div id="quick_icons">
+            <button id="qi1" onclick="hyperlink_qi1()">
+                <img src="images/baidu.gif" />
+                <p>百度</p>
+            </button>
+            <button id="qi2" onclick="hyperlink_qi2()">
+                <img src="images/luogu.gif" />
+                <p>洛谷</p>
+            </button>
+            <button id="qi3" onclick="hyperlink_qi3()">
+                <img src="images/github.gif" />
+                <p>GitHub</p>
+            </button>
+            <button id="qi4" onclick="hyperlink_qi4()">
+                <img src="images/latex_editor.gif" />
+                <p>Latex Editor</p>
+            </button>
+        </div>
+        <div id="bg_block"></div>
+    </div>
+</body>
+</html>
