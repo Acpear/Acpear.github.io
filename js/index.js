@@ -1,7 +1,7 @@
 function time_change() {
     var time = new Date();
     document.getElementById("time").innerHTML = time.getHours().toString().padStart(2, "0") + ":" + time.getMinutes().toString().padStart(2, "0") + ":" + time.getSeconds().toString().padStart(2,"0");
-    document.getElementById("day").innerHTML = time.getFullYear() + "/" + (time.getMonth() + 1) + "/" + time.getDay();
+    document.getElementById("day").innerHTML = time.getFullYear() + "/" + (time.getMonth() + 1) + "/" + time.getDate();
 };
 function baidu_search() {
     var string = document.getElementById("search_box").value;
